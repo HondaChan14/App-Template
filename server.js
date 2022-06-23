@@ -36,6 +36,6 @@ app.get('/', async (request, response) => {
 })
 
 //PORT = 8000
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is running on PORT ${PORT}`)
 })
